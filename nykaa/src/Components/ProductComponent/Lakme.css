@@ -1,0 +1,213 @@
+/* Basic Container Setup */
+.loreal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+ background-color: #f9f9f9; /* Light background for better contrast */
+}
+
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Default grid layout */
+  gap: 20px;
+  width: 100%;
+}
+
+.product-card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 380px;
+  width: 100%;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images are properly scaled */
+  margin-bottom: 10px;
+   background-color: #f5f5f5; /* Subtle background for better product visibility */
+    border-bottom: 1px solid #eee;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Text truncation for long names */
+}
+
+.price-details {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.mrp {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.price {
+  color: #d4006e;
+  font-weight: bold;
+}
+
+.discount {
+  color: green;
+}
+
+.view-details-btn {
+  border: 1px solid #d4006e;
+  color: #d4006e;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.view-details-btn:hover {
+  background-color: #d4006e;
+  color: #fff;
+}
+
+.pagination button {
+  background-color: #d4006e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Title Section */
+.title-section img {
+  max-width: 100%; /* Ensure title images scale properly */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* On screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr; /* Ensure 1 card per row on smaller screens */
+  }
+
+  .product-name {
+    white-space: normal; /* Allow long names to wrap instead of truncating */
+  }
+
+  .product-image {
+    height: auto; /* Allow image to adjust based on content */
+  }
+
+  .view-details-btn {
+    font-size: 0.8rem;
+  }
+}
+
+/* On screens smaller than 480px (extra small) */
+@media (max-width: 480px) {
+  .products-grid {
+    gap: 10px; /* Reduce gap between items for smaller screens */
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+
+  .view-details-btn {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+  }
+}
+
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #f9f9f9, #D4006E);
+  /* Light background for contrast */
+}
+
+/* Input for search */
+.filter-input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Select dropdowns for Price and Discount */
+.filter-select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10px;
+  outline: none;
+  width: 150px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focused Input and Select with Nykaa Pink */
+.filter-input:focus,
+.filter-select:focus {
+  border-color: #D4006E; /* Nykaa Pink border on focus */
+  outline: none;
+}
+
+/* Buttons with Nykaa Pink */
+.filter-section button {
+  background-color: #D4006E; /* Nykaa Pink background */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-section button:hover {
+  background-color: #b3005c; /* Slightly darker shade for hover effect */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-input,
+  .filter-select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+

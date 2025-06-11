@@ -1,0 +1,7 @@
+Homepage: Highlighting offers, new arrivals, and categories like skincare, makeup, etc.
+Product Categories: Filters for price, brand, ratings, and more.
+Product Details Page: Information, reviews, and add-to-cart functionality.
+Cart and Checkout: A smooth shopping experience.
+Search Bar: To quickly find products.
+User Accounts: Login/signup, wishlist, and order history.
+npm install react-slick slick-carousel

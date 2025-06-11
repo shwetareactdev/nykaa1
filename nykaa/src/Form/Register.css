@@ -1,0 +1,93 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC); /* Soft pastel gradient */
+    margin: 0;
+    padding: 0;
+}
+
+/* Register form container */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC); /* Soft pastel gradient */
+    padding: 20px;
+}
+
+.register-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+/* Hover effect for form with gradient */
+.register-form:hover {
+    background: linear-gradient(135deg, #e77a8f, #FFB3AB); /* Gradient from pink to peach */
+  
+}
+
+.register-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button */
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #F8A9B3; /* Nykaa pink color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #e41a42; /* Slightly darker pink */
+}
+
+/* Login link */
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-link a {
+    color:  #e41a42;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column; /* Stack the form and image vertically on small screens */
+    }
+
+    .register-form {
+        width: 100%; /* Make the form full-width on small screens */
+        padding: 25px;
+    }
+}

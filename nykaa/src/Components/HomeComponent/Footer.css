@@ -1,0 +1,158 @@
+.footer {
+    font-family: 'Roboto', sans-serif; /* Nykaa's font style */
+    color: #4a4a4a;
+    background-color: #fff; /* White background */
+    padding: 40px 0;
+    border-top: #000 solid 1px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+   
+}
+
+.footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-column {
+    flex: 1 1 calc(16.66% - 20px);
+    margin: 10px;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000; /* Dark text */
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 8px;
+}
+
+.footer-nav a {
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #ff3366; /* Nykaa pink hover color */
+}
+
+.footer-divider {
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-input-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-input-container {
+    margin-right: 10px;
+}
+
+.footer-input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.footer-input-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.footer-button {
+    background-color: #ff3366; /* Nykaa pink color */
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    
+}
+
+.footer-button:hover {
+    background-color: #e02a53; /* Darker pink on hover */
+}
+
+.footer-description {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+.footer-icons {
+    display: flex;
+    margin-top: 10px;
+    padding: 10;
+    margin: 0;
+    align-items: center;
+    margin-left: 50PX;
+}
+
+.footer-icon {
+    margin-left: 15px;
+    font-size: 20px;
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+    color: #ff3366;
+}
+
+.footer-info {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+
+.footer-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #777;
+}
+
+.footer-info a {
+    color: #ff3366;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-info span {
+    color: #4a4a4a;
+}

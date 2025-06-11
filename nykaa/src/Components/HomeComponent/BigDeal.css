@@ -1,0 +1,109 @@
+.big-deal-container {
+    background-color: #f8e8ea; /* Faint Nykaa pink */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sale-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.deals-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent overflow */
+    scroll-behavior: smooth; /* Smooth scrolling for button navigation */
+}
+
+.deal-card {
+    flex: 0 0 auto;
+    width: 100%; /* Default full-width for smaller screens */
+    max-width: 400px; /* Limit to 400px for larger screens */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 0 10px; /* Add spacing between cards */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.deal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #d4006e; /* Nykaa pink */
+    color: white;
+    font-size: 16px; /* Smaller font size */
+    border: none;
+    border-radius: 50%;
+    width: 40px; /* Set button size */
+    height: 40px; /* Set button size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #a30056; /* Darker Nykaa pink for hover */
+    color: white;
+}
+
+.carousel-control-prev:disabled,
+.carousel-control-next:disabled {
+    background-color: #e1e1e1; /* Light gray when disabled */
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .deals-row {
+        flex-wrap: nowrap;
+        overflow-x: auto; /* Allow horizontal scrolling on small screens */
+    }
+
+    .deal-card {
+        flex: 0 0 80%; /* Adjust size for smaller screens */
+        max-width: 80%; /* Limit max size for cards */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px; /* Smaller buttons for narrow screens */
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .deal-card {
+        flex: 0 0 100%; /* Full width on extra small screens */
+        max-width: 100%;
+        margin: 0; /* Remove spacing between cards */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 25px; /* Even smaller buttons */
+        height: 25px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,40 @@
+/* Wrapper to center everything */
+.my-carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Removes any default padding */
+}
+
+/* Styling for Home1 Image */
+.home1-container {
+  text-align: center;
+  margin: 0; /* No extra margin around the div */
+}
+
+.home1-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Carousel container styling */
+.carousel-container {
+  width: 100%;
+  margin: 0; /* No extra margin */
+}
+
+.carousel-img {
+  max-width: 100%; /* Full width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  display: block; /* Ensures no unwanted spacing */
+  margin: 0 auto; /* Centers the image */
+}
+
+/* Remove any spacing between divs */
+.my-carousel-wrapper > * {
+  margin-bottom: 0; /* No space between elements */
+}
